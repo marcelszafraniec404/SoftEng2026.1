@@ -8,6 +8,7 @@
 #include "ShapeParam.h"
 #include "ShapeParamIndex.h"
 #include "ShapeResultIndex.h"
+#include <stdexcept>
 
 using namespace std;
 
@@ -48,7 +49,8 @@ template <class T> inline ShapeResult<T> Triangle<T>::compute()
     return result;
 }
 
-template <class T> inline string Triangle<T>::print() {
+template <class T> inline string Triangle<T>::print()
+{
     T a = this->m_param.get_attrib(PARAM_SIDE_A);
     T b = this->m_param.get_attrib(PARAM_SIDE_B);
     T c = this->m_param.get_attrib(PARAM_SIDE_C);
