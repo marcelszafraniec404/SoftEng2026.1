@@ -55,4 +55,4 @@ template <class T> inline std::string Circle<T>::print()
     return out.str();
 }
 
-#endif 
+#endif
