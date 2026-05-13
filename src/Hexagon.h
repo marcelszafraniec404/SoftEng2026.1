@@ -6,6 +6,7 @@
 #include "ShapeResultData.h"
 #include "ShapeResultIndex.h"
 #include <string>
+#include <stdexcept>
 using namespace std;
 #include "ShapeParam.h"
 #include "ShapeParamIndex.h"
